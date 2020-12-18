@@ -17,7 +17,6 @@ app.use(fileUpload({
 }));
 
 app.post('/api/fileanalyse', (req, res) => {
-  console.log(req.files)
   response = {
     name: req.files.upfile.name,
     type: req.files.upfile.mimetype,
